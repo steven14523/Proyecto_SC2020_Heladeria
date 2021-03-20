@@ -27,8 +27,12 @@ public class MenuPrincipal {
                      + "\n2.Entrar como administrador"
                      + "\n0. Salir"));
             switch (opcion){
-                case 1://ordenar 
-                case 2:/* entrar como adminitrador pedir contraseña y clave con setter
+                case 1:
+                    
+                case 2:
+                admi1.setUsuario(usuario);
+                    
+                    /* entrar como adminitrador pedir contraseña y clave con setter
                         se comparara para que coincida con un ciclo y un switch
                         y entrar a adminitrador como adminitrador1.menu
                         */

@@ -10,12 +10,12 @@ public int opcion;
 
 public Adminitrador(){}
 
-public Adminitrador(String usuario, String contrasena) {
+/*public Adminitrador(String usuario, String contrasena) {
     this.usuario = usuario;
     this.contrasena = contrasena;
     this.opcion = opcion;
     }
-
+*/
     public String getUsuario() {
         return usuario;
     }
