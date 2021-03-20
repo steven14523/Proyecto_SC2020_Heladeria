@@ -15,8 +15,10 @@ Swith se elegirá entre tres ociones:
 public class MenuPrincipal {
 
     public static void main(String[] args) {
-        
-        int opcion = 0;
+    Adminitrador admi1 = new Adminitrador();
+    Ordenar cliente1 = new Ordenar();
+    
+    int opcion = 0;
         while (opcion !=0){
             opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
                     "Bienvenido a la Heladeria "
@@ -26,7 +28,9 @@ public class MenuPrincipal {
                      + "\n0. Salir"));
             switch (opcion){
                 case 1://ordenar 
-                case 2:// entrar como adminitrador pedir contraseña y clave con setter
+                case 2:/* entrar como adminitrador pedir contraseña y clave con setter
+                        y entrar a adminitrador como adminitrador1.menu
+                        */
                 case 0:// salir 
                 break;    
             }// fin switch         

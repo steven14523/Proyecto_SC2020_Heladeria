@@ -1,33 +1,5 @@
-
-import javax.swing.JOptionPane;
-
 /*
-en la clase adminitrador se podrá entrar unicamente con una contraseña y usuario 
-correctos , esto se hara gracias a un (no recuerdo como se hacía)
-
-mediante un menú se van a deplegar ociones para poder consultar 
-1. Empleado
-2. Sucursal
-3. Inventario
-4. Cliente
-5. Ganancia
-0. Salir
-
-al deplegar la información sera mediante el getter
- */
-
-/**
- *
- * @author emily
- */
-public class administrador {
-    int opcion;
-    private int usuario;
-    private int contrasena;
-
-    
-    
-    public void menu(){
+     }public void menu(){ 
     int opcion = 0;
         while (opcion !=0){
             opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
@@ -46,26 +18,41 @@ public class administrador {
                 case 4://cliente
                 case 5://ganancia
                 case 0://salir    
-                break;           
-            }// fin switch
-            
-        }//Fin ciclo while
-    }// fin menu
+                break;and open the template in the editor.
+ */
 
-    public int getUsuario() {
+/**
+ *
+ * @author emily
+ */
+public class Adminitrador {
+private String usuario;
+private String contrasena;
+
+public Adminitrador(){
+    
+}
+
+
+public Adminitrador(String usuario, String contrasena) {
+    this.usuario = usuario;
+    this.contrasena = contrasena;
+    }
+
+    public String getUsuario() {
         return usuario;
     }
 
-    public void setUsuario(int usuario) {
+    public void setUsuario(String usuario) {
         this.usuario = usuario;
     }
 
-    public int getContrasena() {
+    public String getContrasena() {
         return contrasena;
     }
 
-    public void setContrasena(int contrasena) {
+    public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
     }
-    
-}// fin class adminitrador
+
+}
