@@ -56,7 +56,7 @@ public Adminitrador(String usuario, String contrasena) {
                 case 4://cliente
                 case 5://ganancia
                 case 0://salir    
-                break;           
+//                break;           
             }// fin switch
         }//Fin ciclo while
     return 0;

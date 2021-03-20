@@ -8,10 +8,9 @@
  *
  * @author emily
  */
-public class Ordenar {
-String nombre;    
-}
-
-public void mostrarMenu(){
-
+public class Sunday {
+String nombre;
+int precio;
+String ingredientes;
+int cantidad;   
 }
