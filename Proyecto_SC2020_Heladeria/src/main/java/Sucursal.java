@@ -1,4 +1,4 @@
-
+/* en las sucursales tendremos como maximos 2 
 /**
  *
  * @author emily
@@ -22,10 +22,9 @@ public class Sucursal {
         this.empleado = empleado;
     }
     
-    public int mostrarEmpleados(){
+    public int mostrarSucursal(){
     System.out.println();
     return 0;
     }
     
-            
 }// fin sucursal

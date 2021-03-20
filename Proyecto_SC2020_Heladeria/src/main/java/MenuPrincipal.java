@@ -29,6 +29,7 @@ public class MenuPrincipal {
             switch (opcion){
                 case 1://ordenar 
                 case 2:/* entrar como adminitrador pedir contraseña y clave con setter
+                        se comparara para que coincida con un ciclo y un switch
                         y entrar a adminitrador como adminitrador1.menu
                         */
                 case 0:// salir 

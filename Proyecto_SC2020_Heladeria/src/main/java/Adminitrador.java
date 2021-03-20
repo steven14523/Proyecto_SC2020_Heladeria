@@ -35,6 +35,9 @@ public Adminitrador(String usuario, String contrasena) {
  public int menu(){
     Empleado empleado1 = new Empleado();
     Sucursal sucursal1 = new Sucursal();
+    Inventario inventario1 = new Inventario();
+    Cliente cliente1 = new Cliente();
+    Ganancia ganancia1 = new Ganancia();
     
     while (opcion !=0){
             opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
@@ -47,7 +50,7 @@ public Adminitrador(String usuario, String contrasena) {
                      + "\n5. Ganancias"
                      + "0. Salir"));
             switch (opcion){
-                case 1://empleado1.
+                case 1://empleado
                 case 2://sucursal
                 case 3://inventario
                 case 4://cliente

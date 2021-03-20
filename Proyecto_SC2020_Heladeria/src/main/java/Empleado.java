@@ -1,7 +1,8 @@
 /*
 Los atributos seran encapsulados y rendremos un maximo de 8 empleados 
 los cuales por medio de arreglos seran almacenados
-el salario sera el unico dato privado 
+el salario sera el unico dato privado
+seran un total de 8 empleados y lo sdatos se llevaran por medio de un arreglo 
 /**
  *
  * @author emily
@@ -36,5 +37,8 @@ public class Empleado {
         this.salario = salario;
     }
 
+    public int imprimirEmpleado(){
+       return 0; 
+    }
     
 }// fin class Empleado
