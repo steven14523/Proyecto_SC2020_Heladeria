@@ -12,8 +12,6 @@ Swith se elegirá entre tres ociones:
 0- Salir
 */
 
-
-
 public class MenuPrincipal {
 
     public static void main(String[] args) {
@@ -27,16 +25,14 @@ public class MenuPrincipal {
                      + "\n2.Entrar como administrador"
                      + "\n0. Salir"));
             switch (opcion){
-                case 1:
-                case 2:    
-            }         
+                case 1://ordenar 
+                case 2:// entrar como adminitrador pedir contraseña y clave con setter
+                case 0:// salir 
+                break;    
+            }// fin switch         
             
-    }// fin ciclo while
-        
-        
-        
-        
-        
+        }// fin ciclo while
+
     }// fin main
     
 }// fin class MenuPrincipal
