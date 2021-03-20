@@ -10,7 +10,9 @@ public class Sucursal {
     String telefono;
     String encargado;
     String empleado;
-
+    
+    public Sucursal(){}
+    
     public Sucursal(String nombre, int codigo, String direccion, String telefono, String encargado, String empleado) {
         this.nombre = nombre;
         this.codigo = codigo;
@@ -22,7 +24,7 @@ public class Sucursal {
     
     public int mostrarEmpleados(){
     System.out.println();
-    return int
+    return 0;
     }
     
             

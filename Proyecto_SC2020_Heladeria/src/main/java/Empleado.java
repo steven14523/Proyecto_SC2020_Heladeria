@@ -15,7 +15,9 @@ public class Empleado {
     int horasTrabajadas;
     private int salario;
     int bono;
-
+    
+    public Empleado(){}
+    
     public Empleado(String codigoEmpleado, String cedula, String nombre, int edad, int horasTrabajadas, int salario, int bono) {
         this.codigoEmpleado = codigoEmpleado;
         this.cedula = cedula;
@@ -34,4 +36,5 @@ public class Empleado {
         this.salario = salario;
     }
 
+    
 }// fin class Empleado
