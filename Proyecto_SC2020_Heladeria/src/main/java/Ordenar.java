@@ -9,7 +9,9 @@
  * @author emily
  */
 public class Ordenar {
-String nombre;    
+String nombre;
+String nuevoUsuario;
+
 }
 
 

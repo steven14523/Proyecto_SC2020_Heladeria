@@ -31,10 +31,11 @@ public class MenuPrincipal {
                      + "\n0. Salir"));
             switch (opcion){
                 case 1:
-                JOptionPane.showConfirmDialog(null, "ejemplo");
+                //cliente1.
                 break;
                 
                 case 2:
+                JOptionPane.showMessageDialog(null,"Bienvenido al menú de adminitrador");
                 int contador = 1;
                 
                 do{
@@ -46,11 +47,11 @@ public class MenuPrincipal {
                     }// aqui el usuario y contrasenna son iguales y entran al menú adminitradtivo.
                     else if (usuario != admi1.getUsuario() || contrasena != admi1.getContrasena()){             
                     JOptionPane.showMessageDialog(null,"Su usuario o contraseña son incorrectos"
-                    +"\nLleva " + contador + " intentos de 3");
+                    +"\nLleva " + contador + " intentos de 3, vuelva a intentarlo");
                     }// fin sentencia if
                     contador++;  
                     
-                }while(contador <4); // se repite el ciclo de pedir contrasena\
+                }while(contador <= 3); // se repite el ciclo de pedir contrasena\
                 JOptionPane.showMessageDialog(null, "Ya ulizó los 3 intentos");
                 break;
                 
