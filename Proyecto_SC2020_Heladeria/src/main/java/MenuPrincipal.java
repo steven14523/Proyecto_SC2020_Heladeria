@@ -18,29 +18,48 @@ public class MenuPrincipal {
     Adminitrador admi1 = new Adminitrador();
     Ordenar cliente1 = new Ordenar();
     
+    String usuario;
+    String contrasena;
+    
     int opcion = 0;
-        while (opcion !=0){
+        do{
             opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
-                    "Bienvenido a la Heladeria "
-                     + "Digite la opción que desea realizar"
+                    "Bienvenido a la Heladeria (nombre de heladeria)"
+                     + "\nDigite la opción que desea realizar"
                      + "\n1. Ordenar"
-                     + "\n2.Entrar como administrador"
+                     + "\n2. Entrar como administrador"
                      + "\n0. Salir"));
             switch (opcion){
                 case 1:
-                    
+                JOptionPane.showConfirmDialog(null, "ejemplo");
+                break;
+                
                 case 2:
-                admi1.setUsuario(usuario);
+                int contador = 1;
+                
+                do{
+                usuario = JOptionPane.showInputDialog("Escriba su usuario");
+                contrasena = JOptionPane.showInputDialog("Escriba su contraseña");
+                
+                    if (usuario == admi1.getUsuario() && contrasena == admi1.getContrasena()){
+                    admi1.menu();
+                    }// aqui el usuario y contrasenna son iguales y entran al menú adminitradtivo.
+                    else if (usuario != admi1.getUsuario() || contrasena != admi1.getContrasena()){             
+                    JOptionPane.showMessageDialog(null,"Su usuario o contraseña son incorrectos"
+                    +"\nLleva " + contador + " intentos de 3");
+                    }// fin sentencia if
+                    contador++;  
                     
-                    /* entrar como adminitrador pedir contraseña y clave con setter
-                        se comparara para que coincida con un ciclo y un switch
-                        y entrar a adminitrador como adminitrador1.menu
-                        */
+                }while(contador <4); // se repite el ciclo de pedir contrasena\
+                JOptionPane.showMessageDialog(null, "Ya ulizó los 3 intentos");
+                break;
+                
                 case 0:// salir 
-                break;    
+                break; 
+                
             }// fin switch         
             
-        }// fin ciclo while
+        } while (opcion == 0);// fin ciclo while del menú
 
     }// fin main
     
