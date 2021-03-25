@@ -18,6 +18,7 @@ public class MenuPrincipal {
     Adminitrador admi1 = new Adminitrador();
     Ordenar cliente1 = new Ordenar();
     
+    
     String usuario;
     String contrasena;
     
@@ -42,23 +43,25 @@ public class MenuPrincipal {
                 usuario = JOptionPane.showInputDialog("Escriba su usuario");
                 contrasena = JOptionPane.showInputDialog("Escriba su contraseña");
                 
-                    if (usuario == admi1.getUsuario() && contrasena == admi1.getContrasena()){
+                    if (usuario.equals(admi1.getUsuario()) && contrasena.equals(admi1.getContrasena())){
+                    JOptionPane.showMessageDialog(null,"Bienvenido");
                     admi1.menu();
+                    break;
                     }// aqui el usuario y contrasenna son iguales y entran al menú adminitradtivo.
-                    else if (usuario != admi1.getUsuario() || contrasena != admi1.getContrasena()){             
+                    else {             
                     JOptionPane.showMessageDialog(null,"Su usuario o contraseña son incorrectos"
                     +"\nLleva " + contador + " intentos de 3, vuelva a intentarlo");
                     }// fin sentencia if
                     contador++;  
                     
-                }while(contador <= 3); // se repite el ciclo de pedir contrasena\
+                }while(contador <= 3); // se repite el ciclo de pedir contraseña 3 veces
                 JOptionPane.showMessageDialog(null, "Ya ulizó los 3 intentos");
                 break;
                 
                 case 0:// salir 
                 break; 
                 
-            }// fin switch         
+            }// fin switch para entrar al menú adminitrativo        
             
         } while (opcion == 0);// fin ciclo while del menú
 

@@ -8,21 +8,27 @@ private String usuario = "emily.rp";
 private String contrasena = "1234";
 public int opcion2;
 
-public Adminitrador(){}
-
-    public Adminitrador(String usuario, String contrasena) {
-    this.usuario = usuario;
-    this.contrasena = contrasena;
-    this.opcion2 = opcion2;
-    }
+    public Adminitrador(){}
 
     public String getUsuario() {
         return usuario;
     }
 
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
     public String getContrasena() {
         return contrasena;
     }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
+    }
+
+
+
+
 
     
 // Aqui va el menú para ver las otras opciones---------------------------------
@@ -34,16 +40,16 @@ public Adminitrador(){}
     Cliente cliente1 = new Cliente();
     Ganancia ganancia1 = new Ganancia();
     
-    while (opcion2 !=0){
+         do{
             opcion2 = Integer.parseInt(JOptionPane.showInputDialog(null,
-                    "Bienvenido a la Heladeria "
-                     + "Digite la opción que desea consultar"
-                     + "\n1. Empleado"
-                     + "\n2. Sucursal"
+                    "Usted se encuntra en el menú Administrador"
+                     + "\nDigite la opción que desea consultar"
+                     + "\n1. Empleados"
+                     + "\n2. Sucursales"
                      + "\n3. Inventario"
-                     + "\n4. Cliente"
+                     + "\n4. Clientes"
                      + "\n5. Ganancias"
-                     + "0. Salir"));
+                     + "\n0. Salir"));
             switch (opcion2){
                 case 1://empleado
                 case 2://sucursal
@@ -53,8 +59,9 @@ public Adminitrador(){}
                 case 0://salir    
                     
             }// fin switch
-        }//Fin ciclo while
-    return 0;
+        } while(opcion2 == 0);//Fin ciclo while
+         
+    return opcion2;
     
  }
 } 
