@@ -25,12 +25,7 @@ public int opcion2;
     public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
     }
-
-
-
-
-
-    
+  
 // Aqui va el menú para ver las otras opciones---------------------------------
  public int menu(){
      
