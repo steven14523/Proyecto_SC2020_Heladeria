@@ -8,37 +8,28 @@ seran un total de 8 empleados y lo sdatos se llevaran por medio de un arreglo
  * @author emily
  */
 public class Empleado {
-    String codigoEmpleado;
     String cedula;
     String nombre;
     String cargo;
     int edad;
     int horasTrabajadas;
-    private int salario;
-    int bono;
+    private float pagoHora;
+    private float salario;
     
     public Empleado(){}
-    
-    public Empleado(String codigoEmpleado, String cedula, String nombre, int edad, int horasTrabajadas, int salario, int bono) {
-        this.codigoEmpleado = codigoEmpleado;
+
+    public Empleado(String cedula, String nombre, String cargo, int edad, int horasTrabajadas, float pagoHora) {
         this.cedula = cedula;
         this.nombre = nombre;
+        this.cargo = cargo;
         this.edad = edad;
         this.horasTrabajadas = horasTrabajadas;
-        this.salario = salario;
-        this.bono = bono;
-    }
-
-    public int getSalario() {
-        return salario;
-    }
-
-    public void setSalario(int salario) {
-        this.salario = salario;
-    }
-
-    public int imprimirEmpleado(){
-       return 0; 
+        this.pagoHora = pagoHora;
     }
     
+    public int menu(){
+        ArregloEmpleado empleado1 = new ArregloEmpleado();
+        
+    }
+
 }// fin class Empleado

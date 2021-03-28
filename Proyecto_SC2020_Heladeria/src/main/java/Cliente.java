@@ -29,5 +29,6 @@ public class Cliente {
         this.FrecuenciaDeConsumo = FrecuenciaDeConsumo;
         this.Descuento = Descuento;
     }
-   
+
+    
 }

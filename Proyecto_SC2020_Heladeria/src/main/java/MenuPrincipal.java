@@ -45,17 +45,22 @@ public class MenuPrincipal {
                 
                     if (usuario.equals(admi1.getUsuario()) && contrasena.equals(admi1.getContrasena())){
                     JOptionPane.showMessageDialog(null,"Bienvenido");
-                    admi1.menu();
+                    admi1.menu();// aquí entra al menú de adminitrador
                     break;
                     }// aqui el usuario y contrasenna son iguales y entran al menú adminitradtivo.
-                    else {             
-                    JOptionPane.showMessageDialog(null,"Su usuario o contraseña son incorrectos"
-                    +"\nLleva " + contador + " intentos de 3, vuelva a intentarlo");
+                    else if (!usuario.equals(admi1.getUsuario()) && !contrasena.equals(admi1.getContrasena())){            
+                    JOptionPane.showConfirmDialog(null,"Su usuario o contraseña son incorrectos"
+                    +"\nLleva " + contador + " intentos de 3, \n¿Desea volver a intentarlo?");
+                        if(contador == 3){
+                            JOptionPane.showMessageDialog(null,"Lo sentimos, ya utilizó los 3 intentos permitidos");
+                            break;
+                        }
                     }// fin sentencia if
                     contador++;  
                     
                 }while(contador <= 3); // se repite el ciclo de pedir contraseña 3 veces
-                JOptionPane.showMessageDialog(null, "Ya ulizó los 3 intentos");
+                
+                JOptionPane.showMessageDialog(null, "Fin de sesión administrador");
                 break;
                 
                 case 0:// salir 
