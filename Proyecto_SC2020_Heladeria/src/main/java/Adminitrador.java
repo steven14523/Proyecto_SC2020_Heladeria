@@ -17,7 +17,7 @@ public int opcion;
         Inventario inventario1 = new Inventario();
         Cliente cliente1 = new Cliente();
         Ganancia ganancia1 = new Ganancia();
-    
+        
          do{
             opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
                     "Usted se encuntra en el menú Administrador"
@@ -26,18 +26,19 @@ public int opcion;
                      + "\n2. Sucursales"
                      + "\n3. Inventario"
                      + "\n4. Clientes"
-                     + "\n5. Ganancias"
+                     + "\n5. Ganancias"      
                      + "\n0. Salir"));
             
             switch (opcion){
-                case 1:empleado1.datosEmpleado();
-                       empleado1.mostrarEmpleado();
-                       empleado1.volverAdministrador();
+                case 1:
+                    empleado1.datosEmpleado();
+                    empleado1.mostrarEmpleado();
+                    empleado1.volverAdministrador();
                 case 2://sucursal
                 case 3://inventario
                 case 4://cliente
-                case 5://ganancia  
-                    
+                case 5://ganancia 
+      
             }// fin switch
         } while(opcion != 0);//Fin ciclo while  
  }
