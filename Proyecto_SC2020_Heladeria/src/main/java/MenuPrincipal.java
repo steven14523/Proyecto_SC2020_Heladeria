@@ -17,15 +17,14 @@ public class MenuPrincipal {
     public static void main(String[] args) {
     Adminitrador admi1 = new Adminitrador();
     Ordenar cliente1 = new Ordenar();
-    
-    
+
     String usuario;
     String contrasena;
     
     int opcion = 0;
         do{
             opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
-                    "Bienvenido a la Heladeria (nombre de heladeria)"
+                    "Bienvenido a Dulce Tropic"
                      + "\nDigite la opción que desea realizar"
                      + "\n1. Ordenar"
                      + "\n2. Entrar como administrador"
@@ -68,7 +67,7 @@ public class MenuPrincipal {
                 
             }// fin switch para entrar al menú adminitrativo        
             
-        } while (opcion == 0);// fin ciclo while del menú
+        } while (opcion != 0);// fin ciclo while del menú
 
     }// fin main
     

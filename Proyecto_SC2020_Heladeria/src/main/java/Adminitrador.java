@@ -11,7 +11,7 @@ public int opcion;
     public Adminitrador(){}
     
 // Aqui va el menú para ver las otras opciones---------------------------------
-    public int menu(){
+    public void menu(){
         Empleado empleado1 = new Empleado();
         Sucursal sucursal1 = new Sucursal();
         Inventario inventario1 = new Inventario();
@@ -30,19 +30,19 @@ public int opcion;
                      + "\n0. Salir"));
             
             switch (opcion){
-                case 1: empleado1.menu();
+                case 1:empleado1.datosEmpleado();
+                       empleado1.mostrarEmpleado();
+                       empleado1.volverAdministrador();
                 case 2://sucursal
                 case 3://inventario
                 case 4://cliente
-                case 5://ganancia
-                case 0://salir    
+                case 5://ganancia  
                     
             }// fin switch
-        } while(opcion == 0);//Fin ciclo while
-         
-    return opcion2;
+        } while(opcion != 0);//Fin ciclo while  
  }
-
+//------------------------------------------------------------------------------
+   
  public String getUsuario() {
         return usuario;
     }
