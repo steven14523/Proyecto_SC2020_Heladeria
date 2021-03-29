@@ -1,36 +1,20 @@
 
-import javax.swing.JOptionPane;
-
-/* aqui se llevara un registro de los clientes que se registre , seran con un 
-arreglo de maximo de 15 clientes. los datos se almacenarán gracia sa un arreglo  
-*/
-
-/**
- *
- * @author emily
- */
 public class Cliente {
-    private String Usuario;
-    private String Contrasena;
-    private String Nombre;
-    private String Telefono;
-    private String FechaCumpleano;
-    private int Edad;
-    
-    public Cliente(){}
+    private String Usuario = "";
+    private String Contrasena = "";
+    private String Nombre = "";
+    private String Telefono = "";
+    private String FechaCumpleano = "";
+    private int Edad = 0;
+    private boolean estado = false;
 
-    public Cliente(String Usuario, String Contrasena, String Nombre, String Telefono, String FechaCumpleano, int Edad) {
-        this.Usuario = Usuario;
-        this.Contrasena = Contrasena;
-        this.Nombre = Nombre;
-        this.Telefono = Telefono;
-        this.FechaCumpleano = FechaCumpleano;
-        this.Edad = Edad;
+    public Cliente() {
     }
     
-    
-//Setter and Getters -----------------------------------------------------------
-
+    public void mostrarClientes(){
+        
+    }
+            
     public String getUsuario() {
         return Usuario;
     }
@@ -78,9 +62,15 @@ public class Cliente {
     public void setEdad(int Edad) {
         this.Edad = Edad;
     }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
     
     
-    
-    
-    
-}
+} 
+

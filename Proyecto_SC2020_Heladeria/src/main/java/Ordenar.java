@@ -15,12 +15,13 @@ public class Ordenar {
   
 public void menu(){
     MenuRestaurante menuR = new MenuRestaurante();
+    RegistroCliente registro1 = new RegistroCliente();
     
     int opcion = 0;
         do{
             opcion = Integer.parseInt(JOptionPane.showInputDialog(
-            "Binevenido(a) a Dulce tropic"+ 
-            "\nTenemos ofertas para quienes se registren"+
+            "Binevenido(a) a Dulce Tropic"+ 
+            "\nTenemos ofertas para quienes formen parte de la familia Dulce Tropic"+
             "\n\nDigite la opcion que desea realizar"+
             "\n1.Iniciar sesion "+
             "\n2.Registrarse "+
@@ -32,8 +33,7 @@ public void menu(){
                     
                 break;
                 case 2:
-                    
-                    
+                registro1.registrar(); 
                 break;
                 case 3:
                     

@@ -12,6 +12,7 @@ public int opcion;
     
 // Aqui va el menú para ver las otras opciones---------------------------------
     public void menu(){
+        HeladeriaDulceTropic menu = new HeladeriaDulceTropic();
         Empleado empleado1 = new Empleado();
         Sucursal sucursal1 = new Sucursal();
         Inventario inventario1 = new Inventario();
@@ -34,10 +35,19 @@ public int opcion;
                     empleado1.datosEmpleado();
                     empleado1.mostrarEmpleado();
                     empleado1.volverAdministrador();
+                    break;
                 case 2://sucursal
+                    break;
                 case 3://inventario
+                    break;
                 case 4://cliente
-                case 5://ganancia 
+                    break;
+                case 5://ganancia
+                    break;
+                case 6:
+                    
+                    break;
+                    
       
             }// fin switch
         } while(opcion != 0);//Fin ciclo while  

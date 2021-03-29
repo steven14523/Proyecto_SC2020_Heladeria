@@ -12,9 +12,13 @@ Swith se elegirá entre tres ociones:
 0- Salir
 */
 
-public class MenuPrincipal {
+public class HeladeriaDulceTropic {
 
     public static void main(String[] args) {
+        MenuPrincipal();
+    }    
+    
+    public static void MenuPrincipal(){   
     Adminitrador admi1 = new Adminitrador();
     Ordenar cliente1 = new Ordenar();
 
@@ -31,9 +35,8 @@ public class MenuPrincipal {
                      + "\n0. Salir"));
             switch (opcion){
                 case 1:
-                //cliente1.
+                cliente1.menu();
                 break;
-                
                 case 2:
                 JOptionPane.showMessageDialog(null,"Bienvenido al menú de adminitrador");
                 int contador = 1;
@@ -71,4 +74,4 @@ public class MenuPrincipal {
 
     }// fin main
     
-}// fin class MenuPrincipal
+}// fin class HeladeriaDulceTropic
