@@ -29,7 +29,7 @@ public class HeladeriaDulceTropic {
         do{
             opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
                     "Bienvenido a Dulce Tropic"
-                     + "\nDigite la opción que desea realizar"
+                     + "\nElija la opción que desea:"
                      + "\n1. Ordenar"
                      + "\n2. Entrar como administrador"
                      + "\n0. Salir"));

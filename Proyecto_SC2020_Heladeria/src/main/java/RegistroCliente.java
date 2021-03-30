@@ -14,9 +14,9 @@ public class RegistroCliente {
    public void registrar(){
     String elUsuario = JOptionPane.showInputDialog("Digite un usuario");
     String laContrasena = JOptionPane.showInputDialog("Digite una contraseña facil de recordar");
-    String elNombre = JOptionPane.showInputDialog("Digite su nombre");
-    String elTelefono = JOptionPane.showInputDialog("Digite su teléfono");
-    String elCumple = JOptionPane.showInputDialog("Digite su cumpleaños (día/mes) ");
+    String elNombre = JOptionPane.showInputDialog("Diganos su nombre");
+    String elTelefono = JOptionPane.showInputDialog("Diganos su número de teléfono");
+    String elCumple = JOptionPane.showInputDialog("Diganos su fecha de cumpleaños (día/mes) ");
     int laEdad = Integer.parseInt(JOptionPane.showInputDialog("Digite su edad "));
     
     for(int i=0; i<10; i++){

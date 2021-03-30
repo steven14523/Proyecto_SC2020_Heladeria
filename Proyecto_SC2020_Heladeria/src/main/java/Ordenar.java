@@ -21,8 +21,8 @@ public void menu(){
         do{
             opcion = Integer.parseInt(JOptionPane.showInputDialog(
             "Binevenido(a) a Dulce Tropic"+ 
-            "\nTenemos ofertas para quienes formen parte de la familia Dulce Tropic"+
-            "\n\nDigite la opcion que desea realizar"+
+            "\nAproveche nuestras ofertas para quienes formen parte de la familia Dulce Tropic"+
+            "\n\nDigite la opción que desea realizar"+
             "\n1.Iniciar sesion "+
             "\n2.Registrarse "+
             "\n3.Ingresar como invitado"+
