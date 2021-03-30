@@ -37,14 +37,14 @@ public class Empleado {
     public void datosEmpleado(){
     arreglo[0] = new Empleado("Emily Rodríguez","116850795","Cocina",23,40,500000f); 
     arreglo[1] = new Empleado("Jorge Jimenez","8102482394","Cocina",31,40,700500f); 
-    arreglo[2] = new Empleado("Luciana Ricati","1883947392","Genernte",40,40,700000f);
+    arreglo[2] = new Empleado("Luciana Ricati","1883947392","Generente",40,40,700000f);
     arreglo[3] = new Empleado("Valerie García","1883947392","Cocina",22,40,700000f);
     arreglo[4] = new Empleado("Luis Diego Soto","1883947392","Mesero",31,40,700000f);
-    arreglo[5] = new Empleado("Esteban Sanchez","1883947392","Genernte",31,40,700000f);
-    arreglo[6] = new Empleado("Max Pacheco","1883947392","Genernte",31,40,700000f);
-    arreglo[7] = new Empleado("Luis Carlos Obando","1883947392","Genernte",31,40,700000f);
-    arreglo[8] = new Empleado("Guillermo Pacheco","1883947392","Genernte",31,40,700000f);
-    arreglo[9] = new Empleado("Vanessa Serrano","1883947392","Genernte",31,40,700000f);
+    arreglo[5] = new Empleado("Esteban Sanchez","1883947392","Generente",31,40,700000f);
+    arreglo[6] = new Empleado("Max Pacheco","1883947392","Generente",31,31,700000f);
+    arreglo[7] = new Empleado("Luis Carlos Obando","1883947392","Mesero",31,40,700000f);
+    arreglo[8] = new Empleado("Guillermo Pacheco","1883947392","Generente",39,40,700000f);
+    arreglo[9] = new Empleado("Vanessa Serrano","1883947392","Cocina",38,40,700000f);
     
     
     
