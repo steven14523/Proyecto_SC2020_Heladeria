@@ -16,7 +16,7 @@ public int opcion;
         Empleado empleado1 = new Empleado();
         Sucursal sucursal1 = new Sucursal();
         Inventario inventario1 = new Inventario();
-        Cliente cliente1 = new Cliente();
+        RegistroCliente cliente1 = new RegistroCliente();
         Ganancia ganancia1 = new Ganancia();
         
          do{
@@ -40,7 +40,8 @@ public int opcion;
                     break;
                 case 3://inventario
                     break;
-                case 4://cliente
+                case 4:
+                    cliente1.mostrarClientes();
                     break;
                 case 5://ganancia
                     break;

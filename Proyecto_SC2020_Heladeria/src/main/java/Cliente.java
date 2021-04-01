@@ -7,8 +7,17 @@ public class Cliente {
     private String FechaCumpleano = "";
     private int Edad = 0;
     private boolean estado = false;
-
+    
     public Cliente() {
+        
+    }// constructor
+    
+    public void datosCliente(){
+        
+    }
+    
+    public void mostrarCliente(){
+        
     }
     
     public void mostrarClientes(){

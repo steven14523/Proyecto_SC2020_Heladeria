@@ -30,7 +30,7 @@ public void menu(){
             
             switch(opcion){
                 case 1:
-                    
+                registro1.iniciarSesion();
                 break;
                 case 2:
                 registro1.registrar(); 

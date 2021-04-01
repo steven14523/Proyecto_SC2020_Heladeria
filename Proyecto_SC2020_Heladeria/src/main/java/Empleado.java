@@ -22,7 +22,7 @@ public class Empleado {
     private float salarioBruto;
     float suma;
 
-    private Empleado arreglo[] = new Empleado[3];//deberian ser mas empleados
+    private Empleado arreglo[] = new Empleado[8];//deberian ser mas empleados
     
     public Empleado(){}
 
@@ -45,9 +45,7 @@ public class Empleado {
     arreglo[7] = new Empleado("Luis Carlos Obando","1883947392","Mesero",31,40,700000f);
     arreglo[8] = new Empleado("Guillermo Pacheco","1883947392","Generente",39,40,700000f);
     arreglo[9] = new Empleado("Vanessa Serrano","1883947392","Cocina",38,40,700000f);
-    
-    
-    
+
     }// fin datosEmpleado
     
     public void mostrarEmpleado(){
