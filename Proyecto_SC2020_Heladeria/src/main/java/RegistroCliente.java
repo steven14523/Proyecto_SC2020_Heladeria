@@ -18,7 +18,7 @@ public class RegistroCliente {
     String elNombre = JOptionPane.showInputDialog("3/6 \nDiganos su nombre");
     String elTelefono = JOptionPane.showInputDialog("4/6 \nDiganos su número de teléfono");
     String elCumple = JOptionPane.showInputDialog("5/6 \nDiganos su fecha de cumpleaños (día/mes) ");
-    int laEdad = Integer.parseInt(JOptionPane.showInputDialog("6\6 \nDigite su edad "));
+    int laEdad = Integer.parseInt(JOptionPane.showInputDialog("6/6 \nDigite su edad "));
     
     for(int i=0; i<10; i++){
         if(!registro[i].isEstado()){
@@ -42,7 +42,7 @@ public class RegistroCliente {
     }//registrar
    
     public void iniciarSesion(){
-    int contador = 0;    
+    int contador = 1;    
         do{
         for(int i=0; i<registro.length; i++){    
         String elUsuario = JOptionPane.showInputDialog("Escriba su usuario");
@@ -53,16 +53,16 @@ public class RegistroCliente {
                 break;
             }// inicia sesión
             else if (!registro[i].getUsuario().equals(elUsuario) || !registro[i].getContrasena().equals(laContrasena)){
-                JOptionPane.showMessageDialog(null,"Su usuario o contraseña son incorrectos"
+                JOptionPane.showConfirmDialog(null,"Su usuario o contraseña son incorrectos"
                     +"\nLleva " + contador + " intentos de 3, \n¿Desea volver a intentarlo?");
                 if (contador == 3){
                     JOptionPane.showMessageDialog(null,"Lo sentimos, ya utilizó los 3 intentos permitidos");
-                            break;
+                    break;
                 }// fin contador        
             }// error en inicio sesión
             contador++;
         }// for
-        } while(contador <= 3);
+        } while(contador != 3);
     }// iniciarSesion
     
     public void mostrarClientes(){
@@ -70,7 +70,7 @@ public class RegistroCliente {
     + " clientes registrados, los cuales son: ");
     for (int i=0; i<10; i++){
         JOptionPane.showMessageDialog(null,"Los datos del cliente " + (i+1) + "son: "
-        + "\nNombre : " + registro[i].getNombre()
+        + "\nNombre: " + registro[i].getNombre()
         + "\nEdad: " + registro[i].getEdad()
         + "\nCumpleaños: " + registro[i].getFechaCumpleano()
         + "\nTelefono:" + registro[i].getTelefono());

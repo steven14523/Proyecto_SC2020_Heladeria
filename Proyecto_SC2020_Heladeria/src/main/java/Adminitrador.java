@@ -14,7 +14,8 @@ private String contrasena = "1";
         Empleado empleado1 = new Empleado();
         Sucursal sucursal1 = new Sucursal();
         Inventario inventario1 = new Inventario();
-        RegistroCliente cliente1 = new RegistroCliente();
+        RegistroCliente registro1 = new RegistroCliente();
+        Cliente cliente1 = new Cliente();
         Ganancia ganancia1 = new Ganancia();
         
         int opcion = 0;
@@ -23,7 +24,7 @@ private String contrasena = "1";
                     "Usted se encuntra en el menú Administrador"
                      + "\nDigite la opción que desea consultar"
                      + "\n1. Empleados"
-                     + "\n2. Sucursales"
+                     + "\n2. Sucursal"
                      + "\n3. Inventario"
                      + "\n4. Clientes"
                      + "\n5. Ganancias"      
@@ -34,16 +35,15 @@ private String contrasena = "1";
                     empleado1.datosEmpleado();
                     empleado1.mostrarEmpleado();
                     break;
-                case 2://sucursal
+                case 2:
+                    sucursal1.datosSucursal();
                     break;
                 case 3://inventario
                     break;
                 case 4:
-                    cliente1.mostrarClientes();
+                    registro1.mostrarClientes();
                     break;
                 case 5://ganancia
-                    break;
-                case 6:
                     break;
 
             }// fin switch

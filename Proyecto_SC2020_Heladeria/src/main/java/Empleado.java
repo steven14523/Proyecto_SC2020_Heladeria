@@ -46,9 +46,6 @@ public class Empleado {
     arreglo[7] = new Empleado("L","1883947392","Mesero",31,40,700000f);
     arreglo[8] = new Empleado("Guillermo Pacheco","1883947392","Generente",39,40,700000f);
     arreglo[9] = new Empleado("Vanessa Serrano","1883947392","Cocina",38,40,700000f);
-    
-    
-    
     }// fin datosEmpleado
     
     public void mostrarEmpleado(){

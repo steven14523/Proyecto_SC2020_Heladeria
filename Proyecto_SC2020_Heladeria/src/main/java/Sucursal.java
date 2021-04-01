@@ -1,30 +1,31 @@
+
+import javax.swing.JOptionPane;
+
 /* en las sucursales tendremos como maximos 2 
 /**
  *
  * @author emily
  */
 public class Sucursal {
-    String nombre;
-    int codigo;
-    String direccion;
-    String telefono;
-    String encargado;
-    String empleado;
+    private String nombre = "Dulce Tropic";
+    private String direccion = "Barrio Escalante, 10101, Escalante, San José Province";
+    private String telefono = " 4081-8813";
+    private String encargado;
+    private String horario = "Lunes - Viernes: 11:00 am a 8:00pm - Sábado y Domigo: 8:00am a 8:00pm";
+    
     
     public Sucursal(){}
+
+    public void datosSucursal(){
+        JOptionPane.showMessageDialog(null,"Datos del Local"
+        + "\nNombre: " + nombre 
+        + "\nDireccion: " + direccion
+        + "\nTeléfono: " + telefono
+        + "\nGerente: " + encargado
+        +"\nHorario: "+ horario);
     
-    public Sucursal(String nombre, int codigo, String direccion, String telefono, String encargado, String empleado) {
-        this.nombre = nombre;
-        this.codigo = codigo;
-        this.direccion = direccion;
-        this.telefono = telefono;
-        this.encargado = encargado;
-        this.empleado = empleado;
     }
+
     
-    public int mostrarSucursal(){
-    System.out.println();
-    return 0;
-    }
     
 }// fin sucursal

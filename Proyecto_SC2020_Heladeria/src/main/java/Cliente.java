@@ -8,22 +8,9 @@ public class Cliente {
     private int Edad = 0;
     private boolean estado = false;
     
-    public Cliente() {
-        
+    public Cliente() {    
     }// constructor
-    
-    public void datosCliente(){
         
-    }
-    
-    public void mostrarCliente(){
-        
-    }
-    
-    public void mostrarClientes(){
-        
-    }
-            
     public String getUsuario() {
         return Usuario;
     }

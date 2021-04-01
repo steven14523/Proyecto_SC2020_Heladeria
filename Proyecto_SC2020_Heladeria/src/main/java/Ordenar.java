@@ -33,7 +33,7 @@ public void menu(){
                 registro1.iniciarSesion();
                 break;
                 case 2:
-                registro1.registrar(); 
+                registro1.registrar();
                 break;
                 case 3:
                     

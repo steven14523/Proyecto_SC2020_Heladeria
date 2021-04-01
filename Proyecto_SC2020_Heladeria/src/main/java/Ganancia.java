@@ -10,6 +10,7 @@ public class Ganancia {
     private double montoActual;
     
     public Ganancia(){}
+    
     public Ganancia(int montoActual) {
         this.montoActual = montoActual;
     }
