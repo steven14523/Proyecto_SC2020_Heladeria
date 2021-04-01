@@ -4,11 +4,9 @@ import javax.swing.JOptionPane;
  * @author emily
  */
 public class Adminitrador {
-private String usuario = "emily.rp";
-private String contrasena = "1234";
-public int opcion;
+private String usuario = "1";
+private String contrasena = "1";
 
-    public Adminitrador(){}
     
 // Aqui va el menú para ver las otras opciones---------------------------------
     public void menu(){
@@ -19,6 +17,7 @@ public int opcion;
         RegistroCliente cliente1 = new RegistroCliente();
         Ganancia ganancia1 = new Ganancia();
         
+        int opcion = 0;
          do{
             opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
                     "Usted se encuntra en el menú Administrador"
@@ -34,7 +33,6 @@ public int opcion;
                 case 1:
                     empleado1.datosEmpleado();
                     empleado1.mostrarEmpleado();
-                    empleado1.volverAdministrador();
                     break;
                 case 2://sucursal
                     break;
@@ -46,10 +44,8 @@ public int opcion;
                 case 5://ganancia
                     break;
                 case 6:
-                    
                     break;
-                    
-      
+
             }// fin switch
         } while(opcion != 0);//Fin ciclo while  
  }
