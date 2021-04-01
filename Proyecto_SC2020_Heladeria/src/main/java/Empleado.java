@@ -21,6 +21,7 @@ public class Empleado {
     private float pagoHora;
     private float salarioBruto;
     float suma;
+    String nombre1;
 
     private Empleado arreglo[] = new Empleado[8];//deberian ser mas empleados
     
@@ -49,8 +50,13 @@ public class Empleado {
     }// fin datosEmpleado
     
     public void mostrarEmpleado(){
-    JOptionPane.showMessageDialog(null, "Su planilla consta de " + (arreglo.length)
-    + " empleados");
+    String nombre1 = JOptionPane.showInputDialog("Su planilla consta de " + (arreglo.length)
+    + " empleados."
+    +"\n 1. " + arreglo[0].nombre);
+    
+    
+    
+    
     for(int i=0; i<arreglo.length; i++){
     JOptionPane.showMessageDialog(null, 
         "Datos del empleado "+ (i+1) +
