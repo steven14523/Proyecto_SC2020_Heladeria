@@ -1,15 +1,18 @@
+
 import javax.swing.JOptionPane;
+
 /**
  *
  * @author emily
  */
 public class Adminitrador {
-private String usuario = "1";
-private String contrasena = "1";
 
-    
+    private String usuario = "emily.rp";
+    private String contrasena = "1234";
+    private RegistroCliente registro;
+
 // Aqui va el menú para ver las otras opciones---------------------------------
-    public void menu(){
+    public void menu() {
         HeladeriaDulceTropic menu = new HeladeriaDulceTropic();
         Empleado empleado1 = new Empleado();
         Sucursal sucursal1 = new Sucursal();
@@ -17,20 +20,20 @@ private String contrasena = "1";
         RegistroCliente registro1 = new RegistroCliente();
         Cliente cliente1 = new Cliente();
         Ganancia ganancia1 = new Ganancia();
-        
+
         int opcion = 0;
-         do{
+        do {
             opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
                     "Usted se encuntra en el menú Administrador"
-                     + "\nDigite la opción que desea consultar"
-                     + "\n1. Empleados"
-                     + "\n2. Sucursal"
-                     + "\n3. Inventario"
-                     + "\n4. Clientes"
-                     + "\n5. Ganancias"      
-                     + "\n0. Salir"));
-            
-            switch (opcion){
+                    + "\nDigite la opción que desea consultar"
+                    + "\n1. Empleados"
+                    + "\n2. Sucursal"
+                    + "\n3. Inventario"
+                    + "\n4. Clientes"
+                    + "\n5. Ganancias"
+                    + "\n0. Salir"));
+
+            switch (opcion) {
                 case 1:
                     empleado1.datosEmpleado();
                     empleado1.mostrarEmpleado();
@@ -41,17 +44,17 @@ private String contrasena = "1";
                 case 3://inventario
                     break;
                 case 4:
-                    registro1.mostrarClientes();
+                    registro.mostrarClientes();
                     break;
                 case 5://ganancia
                     break;
 
             }// fin switch
-        } while(opcion != 0);//Fin ciclo while  
- }
+        } while (opcion != 0);//Fin ciclo while  
+    }
 //------------------------------------------------------------------------------
-   
- public String getUsuario() {
+
+    public String getUsuario() {
         return usuario;
     }
 
@@ -66,4 +69,8 @@ private String contrasena = "1";
     public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
     }
-} 
+
+    public void setRegistro(RegistroCliente registro1) {
+        this.registro = registro1;
+    }
+}

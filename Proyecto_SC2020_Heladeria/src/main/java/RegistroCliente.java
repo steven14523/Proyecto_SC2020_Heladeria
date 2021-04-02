@@ -11,7 +11,7 @@ public class RegistroCliente {
         }
     }
 
-   public void registrar(){
+    public void registrar(){
     JOptionPane.showMessageDialog(null,"El registro consta de 6 pasos");
     String elUsuario = JOptionPane.showInputDialog("1/6 \nDigite un usuario");
     String laContrasena = JOptionPane.showInputDialog("2/6 \nDigite una contraseña facil de recordar");
